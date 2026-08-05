@@ -393,8 +393,8 @@
         ];
 
         const certificates = [
-            { id: 1, title: 'Archivist Internship', issuer: 'Secretary-General of DPR RI', image: 'https://placehold.co/800x600/F7D4A0/1F2937?text=DPR+RI+Certificate' },
-            { id: 2, title: 'AI Automation for Work', issuer: 'Professional Certification', image: 'https://placehold.co/800x600/F7D4A0/1F2937?text=AI+Automation+Certificate' }
+            { id: 1, title: 'Archivist Internship', issuer: 'Secretary-General of DPR RI', image: 'Sertifikat Magang DPR RI.jpg' },
+            { id: 2, title: 'AI Automation for Work', issuer: 'Professional Certification', image: 'Sertifikat Automation AI Yunsan Ecclesia_page-0001.jpg' }
         ];
 
         const skills = [
@@ -455,8 +455,8 @@
         const skillsContainer = document.getElementById('tab-skills');
         const renderSkills = (category) => skills.filter(s => s.category === category).map(s => `
             <div class="bg-slate-800 p-4 rounded-2xl border border-slate-700 hover:border-orange-500/50 hover:-translate-y-1 transition-all flex flex-col items-center justify-center text-center group">
-                <div class="text-slate-400 group-hover:text-orange-400 mb-3">
-                    ${s.icon === 'archive-custom' ? archiveSvg : `<i data-lucide="${s.icon}" class="w-6 h-6"></i>`}
+                <div class="text-slate-400 group-hover:text-orange-400 mb-3 flex items-center justify-center w-8 h-8">
+                    ${s.image ? `<img src="${s.image}" alt="${s.name}" class="w-full h-full object-contain rounded-md" />` : (s.icon === 'archive-custom' ? archiveSvg : `<i data-lucide="${s.icon}" class="w-6 h-6"></i>`)}
                 </div>
                 <span class="text-slate-200 text-sm font-medium">${s.name}</span>
             </div>`).join('');
