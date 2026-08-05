@@ -364,9 +364,9 @@
                 fullDesc: 'Conducted comprehensive ethnographic research and social mapping on Pulau Pari. The project involved deep stakeholder analysis and in-person interviews with 50 local residents to identify social risks, community needs, and potential mitigation strategies. The findings were documented into actionable insights for public policy recommendations and community resilience building.',
                 tags: ['Ethnography', 'Social Mapping', 'Stakeholder Analysis', 'Public Policy'],
                 gallery: [
-                    "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80",
-                    "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80",
-                    "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80"
+                    "Pulau Pari 2 .jpg",
+                    "Pulau Pari 1.png",
+                    "Pulau Pari 3.jpg"
                 ]
             },
             {
@@ -376,7 +376,7 @@
                 fullDesc: 'Supported the archival and documentation processes at the Secretary-General of DPR RI. Successfully classified and cataloged over 500 vital legislative archive documents, ensuring data integrity and ease of access. Coordinated with cross-functional teams to streamline data digitization processes and maintain strict adherence to governmental documentation standards.',
                 tags: ['Administration', 'Data Digitization', 'Documentation', 'Government'],
                 gallery: [
-                    "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80"
+                    "DPR RI.jpg"
                 ]
             },
             {
@@ -386,8 +386,8 @@
                 fullDesc: 'Spearheaded community mobilization efforts to establish Kampung KB (Keluarga Berencana). Analyzed complex demographic data covering over 200 priority families to target public awareness campaigns accurately. Facilitated coordination among local stakeholders, ensuring the community empowerment programs aligned with national health and social objectives.',
                 tags: ['Community Engagement', 'Data Analysis', 'Public Awareness', 'Coordination'],
                 gallery: [
-                    "https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80",
-                    "https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    "BKKBN.jpg",
+                    "MAJALAH MBKM BKKBN IP UNTIRTA  .jpg"
                 ]
             }
         ];
@@ -629,9 +629,15 @@
                         <div class="w-full md:w-3/5 aspect-video rounded-2xl overflow-hidden shadow-xl">
                             <img src="${project.gallery[0]}" alt="Kegiatan" class="w-full h-full object-cover" />
                         </div>
-                        <div class="w-3/4 md:w-1/3 aspect-[1/1.414] rounded-2xl overflow-hidden shadow-xl border border-slate-200">
-                            <img src="${project.gallery[1]}" alt="Majalah" class="w-full h-full object-cover" />
-                        </div>
+                        <!-- Bagian gambar potret yang sudah diubah menjadi link -->
+                        <a href="https://drive.google.com/file/d/1WB-RQw0jGtx8Hugt_AmQD6Lm9Kwpf0LV/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="w-3/4 md:w-1/3 aspect-[1/1.414] rounded-2xl overflow-hidden shadow-xl border border-slate-200 group relative block hover:scale-[1.02] transition-transform cursor-pointer">
+                            <img src="${project.gallery[1]}" alt="Majalah BKKBN" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/40 transition-colors flex items-center justify-center">
+                                <span class="opacity-0 group-hover:opacity-100 bg-white text-slate-900 font-bold px-4 py-2 rounded-full shadow-lg transition-opacity flex items-center text-sm">
+                                    <i data-lucide="external-link" class="w-4 h-4 mr-2"></i> Buka Dokumen
+                                </span>
+                            </div>
+                        </a>
                     </div>`;
             } else {
                 customGallery = `
